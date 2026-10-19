@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web de Pokémon</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tipus Pokémon</h1>
+        <p>Aquesta es una guia elemental per a nous entrenadors! En el món Pokémon, cada espècie té un o dos tipus elementals que determinen els seus punts forts, debilitats i efectivitat en el combat.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>CONCEPTES CLAU</h2>
+            <ul>
+                <li><strong>Efectivitat elemental:</strong> Els atacs poden ser «Molt efectiu» (x2 de dany), «Poc efectiu» (x0.5 de dany) o «Sense efecte» (x0 de dany).</li>
+                <li><strong>Tipus dobles:</strong> Molts Pokémon combinen dos tipus, acumulant debilitats i resistències de tots dos.</li>
+                <li><strong>Bonus STAB (Same Type Attack Bonus):</strong> Si un Pokémon utilitza un atac del seu mateix tipus, el moviment fa un 50% més de dany.</li>
+                <li><strong>Total de tipus:</strong> Existeixen actualment 18 tipus diferents a la Pokédex.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Taula Comparativa de Tipus</h2>
+            <p>taula resumida de tipus dels pokemon</p>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tipus</th>
+                        <th>Fort contra (x2)</th>
+                        <th>Débil contra (x0.5)</th>
+                        <th>Exemple de Pokémon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🔥 Foc</td>
+                        <td>Planta, Gel, Insecte, Acer</td>
+                        <td>Aigua, Roca, Terra</td>
+                        <td>Charmander, Arcanine</td>
+                    </tr>
+                    <tr>
+                        <td>💧 Aigua</td>
+                        <td>Foc, Terra, Roca</td>
+                        <td>Planta, Elèctric</td>
+                        <td>Squirtle, Gyarados</td>
+                    </tr>
+                    <tr>
+                        <td>🍃 Planta</td>
+                        <td>Aigua, Terra, Roca</td>
+                        <td>Foc, Gel, Volador, Insecte, Verí</td>
+                        <td>Bulbasaur, Lucario</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>video explicatiu de Pokémon</h2>
+            <p>
+                <a href="https://www.youtube.com/watch?v=PyoRdu-i0AQ" target="_blank" rel="noopener noreferrer">
+                    Veure explicació en vídeo de la taula de tipus a YouTube
+                </a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tens dubtes sobre algun Pokémon o tipus?</h2>
+            <p>Escriu-nos i l'equip d'investigadors de la Pokédex et resoldrà la consulta:</p>
+            
+            <form action="#" method="post">
+                
+                <div>
+                    <label for="nom">El teu nom:</label><br>
+                    <input 
+                        type="text" 
+                        id="nom" 
+                        name="nom" 
+                        placeholder="Ex: Red, lebron james..." 
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Correu electrònic:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="nom@gmail.com" 
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="missatge">Consulta o dubte sobre tipus:</label><br>
+                    <textarea 
+                        id="missatge" 
+                        name="missatge" 
+                        rows="5" 
+                        cols="40" 
+                        placeholder="Voldria saber perque el video es tan interesant..." 
+                        required></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="submit">Enviar pregunta als investigadors</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2026 Guia de Tipus Pokémon - Exercici de Síntesi HTML5</p>
+    </footer>
+
+</body>
+</html>

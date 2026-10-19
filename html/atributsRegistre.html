@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 11 atributs</title>
+</head>
+<body>
+
+    <header>
+        <h1>Crea el teu compte</h1>
+        <p>Aconsegueix accés complet registrant-te amb les teves dades a continuació.</p>
+    </header>
+
+    <main>
+            
+            <div>
+                <label for="nom">Nom complet:</label><br>
+                <input 
+                    type="text" 
+                    id="nom" 
+                    name="nom" 
+                    placeholder="Escriu el teu nom i cognoms" 
+                    required
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="correu">Correu electrònic:</label><br>
+                <input 
+                    type="email" 
+                    id="correu" 
+                    name="correu" 
+                    placeholder="exemple@correu.com" 
+                    required
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="contrasenya">Contrasenya:</label><br>
+                <input 
+                    type="password" 
+                    id="contrasenya" 
+                    name="contrasenya" 
+                    placeholder="Tria una contrasenya segura" 
+                    minlength="8" 
+                    required
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="telefon">Telèfon:</label><br>
+                <input 
+                    type="tel" 
+                    id="telefon" 
+                    name="telefon" 
+                    placeholder="Ex: 612345678" 
+                    pattern="[0-9]{9}" 
+                    title="Introdueix un número de telèfon de 9 dígits (ex: 612345678)" 
+                    required
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <input 
+                    type="checkbox" 
+                    id="termes" 
+                    name="termes" 
+                    required
+                >
+                <label for="termes">Accepto els termes i condicions d'ús</label>
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Crear compte</button>
+            </div>
+
+    </main>
+
+</body>
+</html>
