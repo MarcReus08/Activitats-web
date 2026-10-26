@@ -1,61 +1,91 @@
-/* Style the HTML elements according to the following instructions. 
-DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
-h2{
-color:purple
+/* <body> amb el color #bdc3c7 */
+body {
+  background-color: #bdc3c7;
 }
-/* Give the <body> element a background of #bdc3c7*/
 
+/* h1 amb el color #9b59b6 */
+h1 {
+  color: #9b59b6;
+}
 
-/* Make the <h1> element #9b59b6*/
+/* tots el h2 amb el color orange */
+h2 {
+  color: orange;
+}
 
+/* tots els <li> de color blau*/
+li {
+  color: #007bff;
+}
 
-/* Make all <h2> elements orange */
+/* cambiar el fondo dels paragrafs en groc */
+p {
+  background-color: yellow;
+}
 
+/* tots els inputs amb 3 pixels de la vora en vermell */
+input {
+  border: 3px solid red;
+}
 
-/* Make all <li> elements blue(pick your own hexadecimal blue)*/ 
+/* tots els que tinguin clase hello en blanc  */
+.hello {
+  background-color: white;
+}
 
+/* Dona a l'element amb l'identificador special una vora blava sòlida de 2px  */
+#special {
+  border: 2px solid rgb(0, 102, 204);
+}
 
-/*Change the background on every paragraph to be yellow*/
+/* tots els elements <p> que es trobin dins d'elements <div> tinguin una mida de lletra de 25px */
+div p {
+  font-size: 25px;
+}
 
+/* només els elements <input> de tipus text tinguin un fons gris */
+input[type="text"] {
+  background-color: gray;
+}
 
-/*Make all inputs have a 3px red border*/
+/*  fons rosa als dos elements <p> que es troben dins del tercer <div> */
+div:nth-of-type(3) p {
+  background-color: pink;
+}
 
+/* al segon element <p> dins del tercer <div> una vora blanca de 5px */
+div:nth-of-type(3) p:nth-of-type(2) {
+  border: 5px solid white;
+}
 
-/* Give everything with the class 'hello' a white background*/
+/* l'element <em> dins del tercer <div> color blanc i tingui una mida de lletra de 20px  */
+div:nth-of-type(3) em {
+  color: white;
+  font-size: 20px;
+}
 
+/* (checkboxes) marcades tinguin un marge esquerre de 50px */
+input[type="checkbox"]:checked {
+  margin-left: 50px;
+}
 
-/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+/* els elements <label> es mostrin en MAJÚSCULES sense modificar l'HTML */
+label {
+  text-transform: uppercase;
+}
 
+/* la primera lletra de l'element amb l'identificador special sigui verda i tingui una mida 100px  */
+#special::first-letter {
+  color: green;
+  font-size: 100px;
+}
 
-/*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
+/*  element <h1> canviï a color blau quan s'hi passi el cursor per sobre */
+h1:hover {
+  color: blue;
+}
 
-
-/*Make only inputs with type 'text' have a gray background*/
-
-
-/* Give both <p>'s inside the 3rd <div> a pink background*/
-
-
-/* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-
-
-/* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
-
-
-
-/*BONUS CHALLENGES*/
-/*You may need to research some other selectors and properties*/
-
-/*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
-
-
-/* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
-
-
-/*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
-
-
-/*Make the <h1> element's color change to blue when hovered over */
-
-
-/*Make the <a> element's that have been visited gray */
+/* els elements <a> que ja s'han visitat siguin de color gris*/
+a:visited {
+  color: gray;
+}
