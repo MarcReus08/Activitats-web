@@ -10,17 +10,17 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 5em;
+    gap: 2em;
 }
 
 .one {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 1;
 }
 
 .two {
-    grid-column: 1;
-    grid-row: 2 / -1;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .three {
